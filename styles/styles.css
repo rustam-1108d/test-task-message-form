@@ -1,0 +1,73 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+
+.container {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-top: 10px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+textarea {
+  resize: vertical;
+  height: 100px;
+}
+
+input.valid, textarea.valid {
+  border-color: green;
+}
+
+input.invalid, textarea.invalid {
+  border-color: red;
+}
+
+.error-message {
+  color: red;
+  font-size: 12px;
+  display: none;
+}
+
+button {
+  width: 100%;
+  margin-top: 20px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  background-color: #8bc3ff;
+  color: white;
+  cursor: not-allowed;
+}
+
+button:enabled {
+  background-color: #007BFF;
+  cursor: pointer;
+}
+
+.form-status-message {
+  margin-top: 10px;
+  font-size: 14px;
+}
+.form-status-message.success {
+  color: green;
+}
+.form-status-message.error {
+  color: red;
+}
